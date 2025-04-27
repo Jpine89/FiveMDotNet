@@ -17,4 +17,5 @@ This just allows you to easily target your fiveM folders without having to hardc
 		<Exec Command="xcopy /f /r /y /i bin\Release ..\build\client&#xD;&#xA;xcopy /f /r /y /i ..\resource-files ..\build" Condition="'$(Configuration)' == 'Release'" />
 		<Exec Command="xcopy /f /r /y /i bin\Debug $(FIVEM_SERVER_PATH)\resources\<Script Project Name>\client&#xD;&#xA;xcopy /f /r /y /i ..\resource-files $(FIVEM_SERVER_PATH)\resources\<Script Project Name>\" Condition="'$(Configuration)' == 'Debug'" />
 	</Target>
+	```
 </pre>
